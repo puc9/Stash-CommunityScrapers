@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../validator/scraper.schema.json
+
+name: Path patterns
+
+sceneByFragment:
+  action: script
+  queryURL: "{filename}"
+  script:
+    - python
+    - PathPatterns.py
+    - frag
+
+sceneByQueryFragment:
+  action: script
+  queryURL: "{filename}"
+  script:
+    - python
+    - PathPatterns.py
+    - queryFrag
+# Last Updated October 28, 2022
